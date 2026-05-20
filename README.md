@@ -40,3 +40,57 @@ Distance=2Time×Speed of Sound
 - **Embedded systems** and **IoT** projects
 - Introduction to **autonomous navigation**
 - Educational and research robots
+
+        ┌───────────────┐
+        │     START     │
+        └───────┬───────┘
+                │
+        ┌───────▼───────┐
+        │ Initialize    │
+        │ Sensor &      │
+        │ Motors        │
+        └───────┬───────┘
+                │
+        ┌───────▼───────┐
+        │ Measure       │
+        │ Distance      │
+        │ (HC-SR04)     │
+        └───────┬───────┘
+                │
+        ┌───────▼───────┐
+        │ Distance >    │
+        │ Threshold ?   │
+        └───────┬───────┘
+            YES │       │ NO
+                │       │
+     ┌──────────▼───┐   │
+     │ Move Forward │   │
+     └──────────┬───┘   │
+                │       │
+                └───────┘
+                        ▼
+              ┌────────────────┐
+              │ Stop Motors    │
+              └───────┬────────┘
+                      │
+              ┌───────▼────────┐
+              │ Turn Left /    │
+              │ Turn Right     │
+              └───────┬────────┘
+                      │
+              ┌───────▼────────┐
+              │ Measure        │
+              │ Distance Again │
+              └───────┬────────┘
+                      │
+                      └───────► (Repeat Loop)
+
+
+### Flow explanation
+
+1. Robot starts and initializes sensor and motors
+2. HC-SR04 measures the distance ahead
+3. Robot checks if the distance is safe
+4. If safe → robot moves forward
+5. If obstacle detected → robot stops, turns, and rechecks distance
+6. Process repeats continuously
