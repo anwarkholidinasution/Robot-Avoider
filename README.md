@@ -42,53 +42,6 @@ Distance=2Time×Speed of Sound
 - Educational and research robots
 
 
-        ┌───────────────┐
-        │     START     │
-        └───────┬───────┘
-                │
-        ┌───────▼───────┐
-        │ Initialize    │
-        │ Sensor &      │
-        │ Motors        │
-        └───────┬───────┘
-                │
-        ┌───────▼───────┐
-        │ Measure       │
-        │ Distance      │
-        │ (HC-SR04)     │
-        └───────┬───────┘
-                │
-        ┌───────▼───────┐
-        │ Distance >    │
-        │ Threshold ?   │
-        └───────┬───────┘
-            YES │       │ NO
-                │       │
-     ┌──────────▼───┐   │
-     │ Move Forward │   │
-     └──────────┬───┘   │
-                │       │
-                └───────┘
-                        ▼
-              ┌────────────────┐
-              │ Stop Motors    │
-              └───────┬────────┘
-                      │
-              ┌───────▼────────┐
-              │ Turn Left /    │
-              │ Turn Right     │
-              └───────┬────────┘
-                      │
-              ┌───────▼────────┐
-              │ Measure        │
-              │ Distance Again │
-              └───────┬────────┘
-                      │
-                      └───────► (Repeat Loop)
-
-
-
-
 ### Flow explanation
 
 1. Robot starts and initializes sensor and motors
