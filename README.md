@@ -41,7 +41,7 @@ Distance=2Time×Speed of Sound
 - Introduction to **autonomous navigation**
 - Educational and research robots
 
-        ┌───────────────┐
+ -
         │     START     │
         └───────┬───────┘
                 │
