@@ -41,7 +41,8 @@ Distance=2Time×Speed of Sound
 - Introduction to **autonomous navigation**
 - Educational and research robots
 
- -
+
+        ┌───────────────┐
         │     START     │
         └───────┬───────┘
                 │
@@ -84,6 +85,8 @@ Distance=2Time×Speed of Sound
               └───────┬────────┘
                       │
                       └───────► (Repeat Loop)
+
+
 
 
 ### Flow explanation
