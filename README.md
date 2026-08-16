@@ -1,6 +1,6 @@
 # Robot-Avoider
 
-**Robot Avoider using HC-SR04** is an **obstacle-avoiding robot** that uses the **HC-SR04 ultrasonic sensor** to detect objects and automatically avoid collisions.
+**Robot Avoider using HC-SR04** is an **obstacle-avoiding robot** that uses the **HC-SR04 ultrasonic sensor** to detect objects and automatically change direction to avoid collisions.
 
 ### Brief explanation
 
@@ -13,7 +13,7 @@ The HC-SR04 ultrasonic sensor works by:
 
 Distance formula:
 
-Distance=Time×Speed of Sound2\text{Distance} = \frac{\text{Time} \times \text{Speed of Sound}}{2}
+Distance=Time×Speed of Sound2\\text{Distance} = \\frac{\\text{Time} \\times \\text{Speed of Sound}}{2}
 
 Distance=2Time×Speed of Sound
 
@@ -23,23 +23,25 @@ Distance=2Time×Speed of Sound
 2. **If the distance is greater than a preset threshold** → the robot moves forward
 3. **If the distance is less than or equal to the threshold** → the robot stops
 4. The robot then:
-    - Turns left or right, or
-    - Moves backward and searches for a clear path
+
+   * Turns left or right, or
+   * Moves backward and searches for a clear path
 
 ### Main components
 
-- **HC-SR04 ultrasonic sensor**
-- **Microcontroller** (Arduino, ESP32, etc.)
-- **DC motors with motor driver** (L298N, L293D)
-- **Power supply / battery**
-- Robot chassis
+* **HC-SR04 ultrasonic sensor**
+* **Microcontroller** (Arduino, ESP32, etc.)
+* **DC motors with motor driver** (L298N, L293D)
+* **Power supply / battery**
+* Robot chassis
 
-### Function & applications
+### Function \& applications
 
-- Learning **basic robotics**
-- **Embedded systems** and **IoT** projects
-- Introduction to **autonomous navigation**
-- Educational and research robots
+* Learning **basic robotics**
+* **Embedded systems** and **IoT** projects
+* Introduction to **autonomous navigation**
+* Educational and research robots
+
 
 
 ### Flow explanation
@@ -50,3 +52,4 @@ Distance=2Time×Speed of Sound
 4. If safe → robot moves forward
 5. If obstacle detected → robot stops, turns, and rechecks distance
 6. Process repeats continuously
+
